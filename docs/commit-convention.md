@@ -36,4 +36,6 @@ Here are some examples of emojis and their meanings that you can use in your com
 - 🔧 - Configuration or tooling changes
   - Example: 🔧 [Config]: Update webpack configuration
 
+- 💡	Add or update comments in source code
+
 Feel free to customize and expand this list based on your specific project needs and preferences. The key is to choose emojis that are intuitive and represent the purpose of your commits effectively.

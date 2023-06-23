@@ -1,0 +1,423 @@
+@font-face {
+  font-family: "DistantGalaxy";
+  src: url("fonts/DISTGRG_-webfont.woff") format("woff"),
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      url("fonts/DISTGRG_-webfont.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
+@font-face {
+  font-family: "Aurebesh";
+  src: url("fonts/Aurebesh.ttf") format("truetype");
+}
+
+header {
+  height: 200px;
+  background-image: url("images/Stars.png");
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  height: 200px;
+}
+
+nav li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: DistantGalaxy;
+  font-size: 30px;
+  color: white;
+}
+
+nav a:hover {
+  color: #ffe81f;
+}
+
+.divider {
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(41, 7, 57, 0.99)),
+    url("images/Stars.png");
+  height: 60px;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  background-image: url("images/tatooine.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 600px;
+  gap: 100px;
+}
+
+.desc-Section {
+  margin: 3%;
+  background: #84827584;
+  border-radius: 8%;
+  border: 3px solid rgb(89, 89, 87);
+  width: 1600px;
+  display: flex;
+  flex-direction: column;
+}
+
+.desc-Section h2 {
+  animation: fontTransitionH2 5s ease-in-out;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: bold;
+  font-size: 36px;
+  margin: 3%;
+}
+
+.desc-Section p {
+  animation: fontTransitionP 7s ease-in-out;
+  font-family: "IBM Plex Mono";
+  font-size: 24px;
+  margin-left: 3%;
+}
+
+.desc-Section img {
+  display: none;
+}
+
+@keyframes fontTransitionH2 {
+  from {
+    font: 32px "Aurebesh";
+    line-height: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  to {
+    font: 36px bold "IBM Plex Mono";
+    line-height: 1;
+    opacity: 100%;
+  }
+}
+
+@keyframes fontTransitionP {
+  from {
+    font: 22px "Aurebesh";
+    line-height: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  to {
+    font: 24px "IBM Plex Mono";
+    line-height: 1;
+    opacity: 100%;
+  }
+}
+
+#dataText {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 12px;
+  margin: 3%;
+}
+
+.img-Section {
+  margin: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-Section p {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 13px;
+  background-color: #fbff0069;
+}
+
+.img-Section img {
+  border-radius: 5%;
+  height: 800px;
+  width: 400px;
+}
+
+footer {
+  display: flex;
+  font-size: 13px;
+  color: #b5b6b8;
+  background: #210208;
+  align-items: center;
+  flex-direction: column;
+}
+
+#linkButton {
+  height: 50px;
+  width: 150px;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background: #290739;
+  border: none;
+  border-radius: 5px;
+  transition: 1s all;
+  cursor: pointer;
+}
+
+#linkButton:hover {
+  background: darkorange;
+  transform: scale(1.2);
+}
+
+footer section {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.cover {
+  background-color: rgba(36, 30, 78, 0.8);
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+  bottom: 842px;
+}
+
+.x-wing {
+  height: 200px;
+}
+
+.shootingStars {
+  display: flex;
+  background: url(images/ShootingStars.png);
+  background-size: 350px 200px;
+  background-repeat: repeat;
+  height: 350px;
+  width: 350px;
+  bottom: 493px;
+  border-radius: 50%;
+  animation: shootingStars 5s linear backwards infinite;
+  -webkit-animation: shootingStars 1600ms linear backwards infinite;
+  justify-content: center;
+  align-items: center;
+}
+@keyframes shootingStars {
+  0% {
+    background-position: 200px 200px;
+  }
+  20% {
+    background-position: 160px 160px;
+  }
+  40% {
+    background-position: 120px 120px;
+  }
+  60% {
+    background-position: 80px 80px;
+  }
+  80% {
+    background-position: 40px 40px;
+  }
+  100% {
+    background-position: 0px 0px;
+  }
+}
+@-webkit-keyframes shootingStars {
+  0% {
+    background-position: 200px 200px;
+  }
+  20% {
+    background-position: 160px 160px;
+  }
+  40% {
+    background-position: 120px 120px;
+  }
+  60% {
+    background-position: 80px 80px;
+  }
+  80% {
+    background-position: 40px 40px;
+  }
+  100% {
+    background-position: 0px 0px;
+  }
+}
+.propulsion1__fire {
+  position: relative;
+  top: -12%;
+  left: 13%;
+  rotate: 304deg;
+  display: block;
+  width: 16px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  background: #ff9800;
+  transform: translate(-50%, -50%);
+  animation: dance-fire2 3s infinite linear;
+}
+
+@keyframes dance-fire2 {
+  90%,
+  0%,
+  7%,
+  15%,
+  23%,
+  31%,
+  39%,
+  47%,
+  55% {
+    width: 19px;
+    height: 30px;
+    background: #ffc107;
+  }
+  94%,
+  3%,
+  11%,
+  19%,
+  27%,
+  35%,
+  43%,
+  51%,
+  58%,
+  100% {
+    width: 21px;
+    height: 40px;
+    background: #ff9800;
+  }
+}
+
+.propulsion2__fire {
+  position: relative;
+  top: -17%;
+  left: 28%;
+  rotate: 304deg;
+  display: block;
+  width: 16px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  background: #ff9800;
+  transform: translate(-50%, -50%);
+  animation: dance-fire 3s infinite linear;
+}
+
+@keyframes dance-fire {
+  90%,
+  0%,
+  7%,
+  15%,
+  23%,
+  31%,
+  39%,
+  47%,
+  55% {
+    width: 21px;
+    height: 40px;
+    background: #ffc107;
+  }
+  94%,
+  3%,
+  11%,
+  19%,
+  27%,
+  35%,
+  43%,
+  51%,
+  58%,
+  100% {
+    width: 19px;
+    height: 30px;
+    background: #ff9800;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
+  main {
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+  }
+  .desc-Section {
+    width: 600px;
+  }
+
+  .img-Section img {
+    width: 200px;
+    height: auto;
+  }
+
+  #linkButton {
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .desc-Section {
+    display: block;
+    width: auto;
+  }
+
+  .desc-Section img {
+    display: block;
+    float: right;
+    width: 250px;
+    height: 300px;
+  }
+
+  .img-Section {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  nav a {
+    font-size: 20px;
+  }
+
+  #linkButton {
+    width: auto;
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .desc-Section img {
+    float: none;
+  }
+  .container {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .container {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 250px) {
+  header {
+    justify-content: center;
+  }
+  header img {
+    display: none;
+  }
+  .desc-Section img {
+    display: none;
+  }
+}
